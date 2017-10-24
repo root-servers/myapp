@@ -1,0 +1,15 @@
+{
+    "name": "all_together_now",
+    "version": "0.1.0",
+    "description": "Using the MongoDB driver for myApp",
+    "main": "app.js",
+    "dependencies": {
+      "consolidate": "~0.13.1",
+      "crypto": "0.0.3",
+      "express": "~4.13.3",
+      "mongodb": "~2.1.3",
+      "nunjucks": "~2.2.0"
+    },
+    "author": "de13 <stephane.beuret@data-essential.com>",
+    "license": "0BSD"
+}
