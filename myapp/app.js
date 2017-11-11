@@ -4,12 +4,12 @@ var express = require('express'),
     MongoClient = require('mongodb').MongoClient,
     assert = require('assert');
 
-var mongodb=process.env.MONGODB;
+var uri=process.env.URI;
 app.engine('html', engines.nunjucks);
 app.set('view engine', 'html');
 app.set('views', __dirname + '/views');
 
-MongoClient.connect("mongodb://mongodb:27017/hello", function(err, db) {
+MongoClient.connect(uri, function(err, db) {
 
     assert.equal(null, err);
     console.log("Successfully connected to MongoDB.");
